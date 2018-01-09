@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url("https://static.pexels.com/photos/289649/pexels-photo-289649.jpeg");
+  background-repeat: repeat;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 1em auto;
+  padding: 1em;
+  min-width: 45em;
+  width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow", cursive;
+}
+
+h1 {
+  color: red;
+}
+
+q, blockquote {
+  font-family: 'Bad Script', cursive;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  font-family: "PT Sans Narrow", cursive;
+}
+
+main {
+  margin-top: 4em;
+}

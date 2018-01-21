@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
-html {
-  font-family: Helvetica, Arial, sans-serif;
+body, ul, nav {
+  margin: 0;
 }
 
 body {
-  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
   background-image: url("https://static.pexels.com/photos/289649/pexels-photo-289649.jpeg");
   background-repeat: repeat;
 }
 
 main {
   background-color: rgba(255, 255, 255, 0.75);
-  margin: 1em auto;
+  margin: 4em auto;
   padding: 1em;
   min-width: 45em;
   width: 70%;
@@ -27,10 +27,6 @@ h1 {
   color: red;
 }
 
-q, blockquote {
-  font-family: 'Bad Script', cursive;
-}
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -38,13 +34,44 @@ table, th, td {
 
 th, td {
   padding: 0.5em;
-  text-align: left;
 }
 
 th {
   font-family: "PT Sans Narrow", cursive;
 }
 
-main {
-  margin-top: 4em;
+#nav {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.7em 0.7em;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: black;
+}
+
+.nav-item .active {
+  background-color: dodgerblue;
+}
+
+.nav-branding {
+  text-transform: uppercase;
+  padding: 1em;
+  color: white;
 }

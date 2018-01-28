@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reaction - Курс "Основы веб-программирования"</title>
+  <link href="../style.css" rel="stylesheet">
+  <link href="reaction.css" rel="stylesheet">
+</head>
+<body>
+  <nav id="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <span class="nav-branding">WebDev W2018</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../project.html">Курсовой проект</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="reaction.html">Reaction</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div id="gameboard">
+      <table>
+        <tr>
+          <td id="c00" class="red" onclick="takeCell('c00');">00</td>
+          <td id="c01" onclick="takeCell('c01');">01</td>
+        </tr>
+        <tr>
+          <td id="c10" onclick="takeCell('c10');" style="background-color: aqua">10</td>
+          <td id="c11" onclick="takeCell('c11');">11</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <script src="reaction.js"></script>
+  </body>
+</html>

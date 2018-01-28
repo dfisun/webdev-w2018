@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Page - Web Development Fundamentals</title>
+  <link href="../../style.css" rel="stylesheet">
+</head>
+<body>
+  <main>Open browser console</main>
+  <script>
+    function greet(name) {
+      console.log('Hello, ' + name + '!');
+    }
+
+    let greeting = 'Hello';
+    greeting = 'Hi';
+
+    let names = ['Maksim', 'Darina', 'Juri'];
+    console.log(names, names.length);
+
+    console.log(names[0]);
+
+    names.push('Dmitry');
+
+    names[7] = 'x';
+    console.log(names, names.length);
+
+    for(let i = 0; i < names.length; i++) {
+      console.log('step', i);
+      greet(names[i]);
+    }
+
+    bestNames = names;
+    console.log('best names', bestNames);
+    bestNames.pop();
+    console.log('best names:', bestNames);
+    console.log('names:', names);
+
+  </script>
+</body>
+</html>

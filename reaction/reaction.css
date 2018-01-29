@@ -1,8 +1,12 @@
+table {
+  margin: auto;
+}
+
 #gameboard {
   text-align: center;
-  cursor: pointer;
 }
 
 #gameboard td {
   padding: 2em;
+  cursor: pointer;
 }

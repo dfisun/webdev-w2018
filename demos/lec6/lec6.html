@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Playground - Курс "Основы веб-программирования"</title>
+</head>
+<body>
+  <main id='main'>
+    Empty
+  </main>
+  <script>
+    let num = 4;
+    let four = num;
+    num = 5;
+
+    console.log('num', num, 'four', four);
+
+    let list = ['a', 'b', 'c'];
+    list[0];
+    console.log(list);
+    console.log('first element of the list', list[0]);
+
+    let obj = {
+      name: 'simple object'
+    }
+    console.log(obj);
+
+    console.log('name param of obj', obj.name);
+    obj.greet = function() {
+      return 'Hi!';
+    }
+
+    console.log(obj.greet());
+    console.log('square root of 16', Math.sqrt(16));
+    let name = 'name';
+    console.log(obj[name]);
+
+
+    let redBlock = document.createElement('div');
+    redBlock.innerHTML = 'red block';
+    redBlock.style.backgroundColor = 'red';
+    document.getElementById('main').appendChild(redBlock);
+  </script>
+</body>
+</html>

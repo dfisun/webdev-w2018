@@ -6,7 +6,31 @@ table {
   text-align: center;
 }
 
-#gameboard td {
-  padding: 2em;
+.cell {
+  width: 4em;
+  height: 4em;
   cursor: pointer;
+}
+
+.cell.player {
+  background-color: green;
+}
+
+.cell.opponent {
+  background-color: red;
+}
+
+.cell.selected {
+  border-color: orange;
+  border-width: thick;
+}
+
+.cell.near {
+  background-color: rgb(100, 200, 0);
+  background-color: rgba(100, 200, 0, 0.75);
+}
+
+.cell.far {
+  background-color: rgb(100, 250, 0);
+  background-color: rgba(100, 250, 0, 0.75);
 }
